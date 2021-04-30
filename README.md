@@ -1,4 +1,4 @@
-# RoboSolis-Sensor-Sonar
+# RoboSolis-Sonar-Sensor
 
 In this example, the Robot Solis moves in a fenced space and bypasses the side walls and possible obstacles when detected by its sonar sensors at pre-configured distances.
 
