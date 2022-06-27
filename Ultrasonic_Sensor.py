@@ -2,7 +2,8 @@
 """
 Solis Robot - SoBot
 
-Ultrasonic_Sensor.py: In this example, Robot Solis moves in a fenced space around side walls and possible obstacles when detected by its ultrasonic distance sensors at pre-configured distances..
+Ultrasonic_Sensor.py: In this example, Robot Solis moves in a fenced space around side walls and possible
+obstacles when detected by its ultrasonic distance sensors at pre-configured distances.
 
 Created By   : Vinicius M. Kawakami
 Version      : 1.0
