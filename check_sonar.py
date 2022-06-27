@@ -1,3 +1,15 @@
+#!/usr/bin/python3
+"""
+Solis Robot - SoBot
+
+check_sonar.py: Library with function to check the distance of the ultrasonic sensors and compare with pre-established values.
+
+Created By   : Vinicius M. Kawakami
+Version      : 1.0
+
+Company: Solis Tecnologia
+"""
+
 from time import sleep
 import serial
 
