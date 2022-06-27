@@ -41,6 +41,7 @@ import check_sonar
 ~~~
 
 The ''time'' library is needed to generate time delays and the ''serial'' library for serial/usb Raspberry connection with the robot controller driver.
+
 The ''check-sonar'' library has a function that sends the reading command of the ultrasonic sensors and checks the distance of each sensor with a pre-established range from the return of the command.
 
 ### Code Description
@@ -66,7 +67,7 @@ usb.write(b"LT E1 RD0 GR50 BL0")    # Turn on led tape in green
 
 ### Flowchart
 
-![]()
+![](https://github.com/SolisTecnologia/SoBot-Ultrasonic-Sensor/blob/master/png/Flowchart_Ultrasonic_Sensor.png)
 
 ## Ultrasonic Distance Sensor - [check_sonar.py](https://github.com/SolisTecnologia/SoBot-Ultrasonic-Sensor/blob/master/check_sonar.py)
 
@@ -96,7 +97,7 @@ For more information about the commands used, check the Robot Commands Reference
 
 ### Flowchart
 
-![]()
+![](https://github.com/SolisTecnologia/SoBot-Ultrasonic-Sensor/blob/master/png/Flowchart_check_sonar.png)
 
 # Reference Link
 [SolisTecnologia website](https://solistecnologia.com/produtos/robotsingle)
