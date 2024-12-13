@@ -5,15 +5,14 @@ Solis Robot - SoBot
 Ultrasonic_Sensor.py: In this example, Robot Solis moves in a fenced space around side walls and possible
 obstacles when detected by its ultrasonic distance sensors at pre-configured distances.
 
-Created By   : Vinicius M. Kawakami
-Version      : 1.0
+Created By   : Vinicius M. Kawakami and Rodrigo L. de Carvalho
+Version      : 1.1
 
 Company: Solis Tecnologia
 """
 
 from time import sleep
 import serial
-import check_sonar
 from check_sonar import *
 
 sonar_sensor = [0,0,0,0,0,0,0,0]
@@ -28,9 +27,7 @@ usb = serial.Serial('/dev/ttyACM0', 57600, timeout=0, dsrdtr=False)
 usb.flush()         # Waits data configuration
 
 usb.write(b"LT E1 RD0 GR50 BL0")    # Turn on led tape in green
-sleep(1)
 usb.write(b"MT0 MC AT100 DT100 V2") # Parameter settings for continuous mode
-sleep(1)
 usb.write(b"MT0 ME1")               # Enables wheel motors on mode continuous
 sleep(1)
 
