@@ -40,10 +40,12 @@ def sonar_value():
     for i in range(8):
         try:
             distance = int(split_data[(i*2)+1])
-            if distance < 20:
-                sensor[i] = 4000
-            else:
-                sensor[i] = distance
+            sensor[i] = distance
+            if distance < 120:
+                sensor[i] = 0
+            if distance > 3800:
+                sensor[i] = 3800
+
         except:
             sensor[i] = 0
 
@@ -76,20 +78,20 @@ def sonar_value():
         value[RIGHT] = 1
         value[LEFT] = 0
 
-    # Check right back sensor if it is <= 15cm
-    if(sensor[RIGHT_BACK] <= 150):
+    # Check right back sensor if it is <= 20cm
+    if(sensor[RIGHT_BACK] <= 200):
         value[RIGHT_BACK] = 1
     else:
         value[RIGHT_BACK] = 0
 
-    # Check back sensor if it is <= 15cm
-    if(sensor[BACK] <= 150):
+    # Check back sensor if it is <= 20cm
+    if(sensor[BACK] <= 200):
         value[BACK] = 1
     else:
         value[BACK] = 0
 
-    # Check left back sensor if it is <= 15cm
-    if(sensor[LEFT_BACK]<= 150):
+    # Check left back sensor if it is <= 20cm
+    if(sensor[LEFT_BACK]<= 200):
         value[LEFT_BACK] = 1
     else:
         value[LEFT_BACK] = 0
